@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Monkeys</title>
+    <meta name="theme-color" content="#020e15" />
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --text-color: #f6f6f2;
+        --muted-color: #c5b9ab;
+        --accent-color: #f9c26f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 1rem;
+        margin: 0;
+        font-family:
+          'Space Grotesk',
+          'Segoe UI',
+          system-ui,
+          -apple-system,
+          sans-serif;
+        color: var(--text-color);
+        background-image:
+          radial-gradient(circle at top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+          url('img/background.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        width: min(32rem, 100%);
+        padding: 3rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1rem;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(1rem);
+        gap: 2rem;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        border: 0;
+      }
+
+      .logo {
+        width: 14rem;
+        margin: 0 auto;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      .label {
+        font-size: 0.85rem;
+        color: var(--muted-color);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .value {
+        font-size: 1.15rem;
+        font-weight: 500;
+      }
+
+      .value + .label {
+        margin-top: 1rem;
+      }
+
+      @media (max-width: 520px) {
+        main {
+          padding: 2rem;
+        }
+
+        .logo {
+          width: 11rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">Fast Monkeys</h1>
+      <img src="img/logo.svg" alt="Fast Monkeys" class="logo" />
+      <address>
+        <div class="label">Contact</div>
+        <div class="value">
+          <a href="mailto:contact@fastmonkeys.com">contact@fastmonkeys.com</a>
+        </div>
+        <div class="label">Visit</div>
+        <div class="value">
+          Eerikinkatu 3 B, 5th floor<br />
+          00100 Helsinki, Finland
+        </div>
+      </address>
+    </main>
+  </body>
+</html>
